@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/nuxt3-playground/' : '/',
+    baseURL: process.env.NODE_ENV === 'development' ? '/' : '/nuxt3-playground/',
     buildAssetsDir: '/static/',
   },
 })
