@@ -33,7 +33,7 @@ export default defineNuxtConfig({
         },
         {
           rel: 'manifest',
-          href: `${path}manifest.json`,
+          href: 'manifest.json',
         },
       ],
     }
