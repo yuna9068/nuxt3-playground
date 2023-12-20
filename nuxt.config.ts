@@ -12,31 +12,43 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          href: `${path}favicon.ico`,
+          href: '/favicon.ico',
         },
         {
           rel: 'icon',
           type: 'image/png',
           sizes: '32x32',
-          href: `${path}favicon-32x32.png`,
+          href: '/favicon-32x32.png',
         },
         {
           rel: 'icon',
           type: 'image/png',
           sizes: '16x16',
-          href: `${path}favicon-16x16.png`,
+          href: '/favicon-16x16.png',
         },
         {
           rel: 'apple-touch-icon',
           sizes: '180x180',
-          href: `${path}apple-touch-icon.png`,
+          href: '/apple-touch-icon.png',
         },
         {
           rel: 'manifest',
           href: 'manifest.json',
         },
       ],
-    }
+      meta: [
+        {
+          name: 'theme-color',
+          media: '(prefers-color-scheme: light)',
+          content: '#FFFFFF',
+        },
+        {
+          name: 'theme-color',
+          media: '(prefers-color-scheme: dark)',
+          content: '#2B2C37',
+        },
+      ],
+    },
   },
   css: [
     '~/assets/style/reset.css',
